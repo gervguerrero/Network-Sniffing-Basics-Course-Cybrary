@@ -68,4 +68,42 @@ The command "arpspoof -i h1 -eth0 -t 192.168.0.10 192.168.0.1" will be used to s
 
 ![image](https://github.com/gervguerrero/Network-Sniffing-Basics-Course-Cybrary/assets/140366635/ae6d6354-cde6-42e5-824d-de24b5378a0e)
 
+Looking at Wireshark after the change, activity from the victim 192.168.0.10 can be seen:
+
+![image](https://github.com/gervguerrero/Network-Sniffing-Basics-Course-Cybrary/assets/140366635/9e76134a-7544-401f-a198-453e961787d1)
+
+
+</br>
+
+**4. Identify some credentials sent in plaintext, and use them to log in and retrieve some sensitive information.**
+
+Looking in Wireshark, the protocols being passed on the network can be seen:
+
+![image](https://github.com/gervguerrero/Network-Sniffing-Basics-Course-Cybrary/assets/140366635/f32331f6-1ac9-438f-ad1b-f0dff76dc4c2)
+
+A plaintext protocol FTP can be seen in the listings. 
+
+Focusing on FTP as a filter, the victim 192.168.0.10 exposes credentials user: ash, password: frisson-costson going to an FTP server of 192.168.1.200:
+
+![image](https://github.com/gervguerrero/Network-Sniffing-Basics-Course-Cybrary/assets/140366635/3e1def99-92fd-4a21-8362-ce364d63fd1b)
+
+</br>
+
+![image](https://github.com/gervguerrero/Network-Sniffing-Basics-Course-Cybrary/assets/140366635/6734d484-75e2-44e5-9642-e10911a4c9ed)
+
+</br>
+
+![image](https://github.com/gervguerrero/Network-Sniffing-Basics-Course-Cybrary/assets/140366635/b2cbb04e-1804-4191-b04f-8db25412af7f)
+
+</br>
+
+Using the exposed credentials, the FTP server 192.168.1.200 is able to be used now:
+
+![image](https://github.com/gervguerrero/Network-Sniffing-Basics-Course-Cybrary/assets/140366635/6a390f39-dfec-4836-8175-4c8ed9043b35)
+
+Looking into the FTP server, a sensitive document "agreement.pdf" can be seen for use and is downloaded:
+
+![image](https://github.com/gervguerrero/Network-Sniffing-Basics-Course-Cybrary/assets/140366635/e95e2f2d-2f9a-4cc1-8010-3cabac3b8546)
+
+![image](https://github.com/gervguerrero/Network-Sniffing-Basics-Course-Cybrary/assets/140366635/d7b2f2a1-5d2c-4473-8ec0-9c40b2499859)
 
