@@ -1,4 +1,4 @@
-# Network-Sniffing-Basics-Course-Cybrary
+# 👨‍💻 Network-Sniffing-Basics-Course-Cybrary 👨‍💻
 
 This page showcases a walkthrough of Cybrary's Network Sniffing Basics Course in the context of Offensive Security.
 
@@ -10,7 +10,7 @@ This page showcases a walkthrough of Cybrary's Network Sniffing Basics Course in
 - Wireshark
 - ARP Spoofing (arpspoof tool)
 - Network Sniffing
-- Man In the Middle Atttack (MITM)
+- Man In the Middle Attack (MITM)
 - Passive Collection 
 - Red Teaming
 - Reconnaissance and Network Mapping
