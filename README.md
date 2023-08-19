@@ -2,6 +2,8 @@
 
 This page showcases a walkthrough of Cybrary's Network Sniffing Basics Course in the context of Offensive Security.
 
+Course: https://app.cybrary.it/browse/virtual-lab/network-sniffing-basics
+
 ![image](https://github.com/gervguerrero/Network-Sniffing-Basics-Course-Cybrary/assets/140366635/bbedaed2-2100-4992-9cc7-2599900e8928)
 
 ## Tools & Technologies Used 
@@ -19,8 +21,6 @@ This page showcases a walkthrough of Cybrary's Network Sniffing Basics Course in
 - Cookie Stealing/Cookie Exploitation
 - Session Hijacking/Session Fixation
   
-https://app.cybrary.it/browse/virtual-lab/network-sniffing-basics
-
 ## Scenario 1
 
 The scenario is that you are a Red Team Penetration Tester who gets physical access into a client's corporate building, and finds a sensitive communications closet with a network switch exposed. 
@@ -238,7 +238,7 @@ CTF-style questions:
 
 ![image](https://github.com/gervguerrero/Network-Sniffing-Basics-Course-Cybrary/assets/140366635/7889e642-40ea-48da-a036-22f8ac05b775)
 
-** Basic Security Remediations for this Lab**
+**Basic Security Remediations for this Lab**
 - Use SMB3 with encryption to prevent sniffing.
 - Use encrypted chat services.
 - Prevent putting passwords directly in chat applications. (Especially cleartext non encrypted chats.) Use other methods to send sensitive information and validate users before submitting. (Call Desk phone, use secure email, etc.) 
